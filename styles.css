@@ -4,3 +4,8 @@
     box-sizing: border-box;
 }
 
+nav,
+header,
+main {
+    border: 1px solid black;
+}
