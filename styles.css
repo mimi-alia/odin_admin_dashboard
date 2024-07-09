@@ -15,7 +15,7 @@ main {
 .container {
     display: grid;
     border: 1 solid pink;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(5 1fr);
 }
 
@@ -24,15 +24,45 @@ main {
 }
 
 .container nav {
+    grid-column: 1;
     grid-row: span 6;
 }
 
 .container header {
-    grid-row: span 2;
-    grid-column: span 2;
+    grid-row: span 1;
+    grid-column: span 3;
 }
 
 .container main {
-    grid-row: span 4;
-    grid-column: span 2;
+    grid-row: span 5;
+    grid-column: span 3;
 }
+
+
+
+/* Font and Text Styles */
+
+nav{
+    color: blue;
+    font-size: 25px;
+}
+
+nav h2 {
+    font-size: 35px;
+    padding: 20px 0;
+    margin-bottom: 10px;
+}
+
+nav div{
+    padding: 5px;
+    margin: 10px;
+}
+
+nav .space {
+    padding: 20px 0px
+}
+
+nav div:last-child{
+    padding-bottom: 100px;
+}
+
