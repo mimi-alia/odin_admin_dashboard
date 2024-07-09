@@ -38,6 +38,25 @@ main {
     grid-column: span 3;
 }
 
+header{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+
+header .search,
+header  .profile {
+    grid-column: 1 / -1;
+    grid-row: span 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+}
+header .search div:first-child {
+    grid-column: 1 / 5;
+}
+
+
 
 
 /* Font and Text Styles */
